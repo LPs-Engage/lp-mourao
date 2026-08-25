@@ -1,0 +1,217 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    animation: fadeSlideDown 0.6s ease both;
+}
+
+header a,
+header .button,
+.menu-toggle span {
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+#hero .hero-art img {
+    animation: fadeIn 0.8s ease both;
+    animation-delay: 0.15s;
+}
+
+#hero .blocos {
+    animation: fadeSlideUp 0.7s ease both;
+    animation-delay: 0.35s;
+}
+
+.blocos-track {
+    animation: marquee 30s linear infinite;
+}
+
+#projetos figure button {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#projetos figure button:hover {
+    transform: translate(-50%, -50%) scale(1.06);
+}
+
+#entregas [data-filter] {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+#entregas article {
+    transition: background-color 0.2s ease;
+}
+
+#entregas article:hover {
+    background: var(--color-auxiliar-cinza);
+}
+
+#lucas article {
+    transition: background-color 0.2s ease;
+}
+
+#lucas article:hover {
+    background: var(--color-auxiliar-cinza);
+}
+
+[data-anim].is-visible {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.has-anim [data-anim] {
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.has-anim [data-anim].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.has-anim [data-anim="from-right"] {
+    opacity: 0;
+    transform: translateX(80px);
+}
+
+.has-anim [data-anim="from-left"] {
+    opacity: 0;
+    transform: translateX(-80px);
+}
+
+.has-anim #trabalho article img:nth-child(1)[data-anim="from-right"] {
+    transform: translateX(80px) rotate(-8deg);
+}
+
+.has-anim #trabalho article img:nth-child(2)[data-anim="from-right"] {
+    transform: translateX(100px) rotate(7deg);
+}
+
+.has-anim #trabalho article img:nth-child(1)[data-anim="from-left"] {
+    transform: translateX(-80px) rotate(-8deg);
+}
+
+.has-anim #trabalho article img:nth-child(2)[data-anim="from-left"] {
+    transform: translateX(-100px) rotate(7deg);
+}
+
+.has-anim #trabalho article img:nth-child(1)[data-anim="from-right"].is-visible,
+.has-anim #trabalho article img:nth-child(1)[data-anim="from-left"].is-visible {
+    opacity: 1;
+    transform: rotate(-8deg);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition-delay: 0s;
+}
+
+.has-anim #trabalho article img:nth-child(2)[data-anim="from-right"].is-visible,
+.has-anim #trabalho article img:nth-child(2)[data-anim="from-left"].is-visible {
+    opacity: 1;
+    transform: rotate(7deg);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.has-anim #trabalho article img:only-child[data-anim="from-right"] {
+    transform: translateX(80px) rotate(4deg);
+}
+
+.has-anim #trabalho article img:only-child[data-anim="from-right"].is-visible {
+    transform: rotate(4deg);
+}
+
+.has-anim [data-anim="from-right"].is-visible,
+.has-anim [data-anim="from-left"].is-visible {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+#trabalho h2[data-anim].is-visible {
+    transition-delay: 0.1s;
+}
+
+#lucas h2[data-anim].is-visible {
+    transition-delay: 0.1s;
+}
+
+#lucas article[data-anim]:nth-child(1).is-visible { transition-delay: 0.1s; }
+#lucas article[data-anim]:nth-child(2).is-visible { transition-delay: 0.2s; }
+#lucas article[data-anim]:nth-child(3).is-visible { transition-delay: 0.3s; }
+#lucas article[data-anim]:nth-child(4).is-visible { transition-delay: 0.4s; }
+#lucas article[data-anim]:nth-child(5).is-visible { transition-delay: 0.5s; }
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    header,
+    #hero .hero-art img,
+    #hero .blocos,
+    .blocos-track {
+        animation: none;
+    }
+
+    header,
+    #hero .hero-art img,
+    #hero .blocos,
+    [data-anim],
+    [data-anim="from-left"],
+    [data-anim="from-right"] {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    header a,
+    header .button,
+    .menu-toggle span,
+    #projetos figure button {
+        transition: none;
+    }
+}
