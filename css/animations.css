@@ -6,10 +6,18 @@ header {
     animation: fadeSlideDown 0.6s ease both;
 }
 
-header a,
-header .button,
-.menu-toggle span {
-    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+footer a {
+    transition: opacity 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+footer nav a:hover,
+footer > div:last-child a:hover {
+    opacity: 0.7;
+}
+
+footer .container > div:last-child a:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
 }
 
 #hero .hero-art img {
@@ -26,16 +34,112 @@ header .button,
     animation: marquee 30s linear infinite;
 }
 
-#projetos figure button {
+#projetos figure button,
+#redes figure button {
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-#projetos figure button:hover {
+#projetos figure button:hover,
+#redes figure button:hover {
     transform: translate(-50%, -50%) scale(1.06);
 }
 
-#entregas [data-filter] {
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+#redes .f--column > div a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#redes .f--column > div a:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+#agenda article > div {
+    transition: transform 0.6s ease;
+}
+
+#agenda article.is-flipped > div {
+    transform: rotateY(180deg);
+}
+
+#onde article a,
+#onde .f--column > .button {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#onde article a:hover,
+#onde .f--column > .button:hover {
+    opacity: 0.85;
+}
+
+#baixada figure img {
+    transition: transform 0.4s ease;
+}
+
+#baixada figure:hover img {
+    transform: scale(1.04);
+}
+
+#canal article > div > div a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#canal article > div > div a:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+#movimento form .button,
+#movimento #form-success a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#movimento form .button:hover,
+#movimento #form-success a:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+#movimento form,
+#movimento #form-success {
+    transition: opacity 0.45s ease, transform 0.45s ease, visibility 0.45s ease;
+}
+
+#movimento #form-success {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(40px);
+    pointer-events: none;
+}
+
+#movimento.is-sent form {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-40px);
+    pointer-events: none;
+}
+
+#movimento.is-sent #form-success {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+    transition-delay: 0.12s;
+}
+
+#fatos article {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#fatos article:hover {
+    background: var(--color-auxiliar-cinza);
+}
+
+#capitulo article {
+    transition: background-color 0.2s ease;
+}
+
+#capitulo article:hover {
+    background: var(--color-auxiliar-cinza);
 }
 
 #entregas article {
@@ -211,7 +315,26 @@ header .button,
     header a,
     header .button,
     .menu-toggle span,
-    #projetos figure button {
+    footer a,
+    #projetos figure button,
+    #redes figure button,
+    #redes .f--column > div a,
+    #agenda article > div,
+    #baixada figure img,
+    #canal article > div > div a,
+    #movimento form .button,
+    #movimento #form-success a,
+    #movimento form,
+    #movimento #form-success,
+    #onde article a,
+    #onde .f--column > .button {
         transition: none;
+    }
+
+    #baixada figure:hover img,
+    #canal article > div > div a:hover,
+    #movimento form .button:hover,
+    #movimento #form-success a:hover {
+        transform: none;
     }
 }

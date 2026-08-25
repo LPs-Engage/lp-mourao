@@ -12,13 +12,13 @@
             <a href="#lucas">Lucas</a>
             <a href="#trabalho">Trabalho</a>
             <a href="#projetos">Projetos</a>
-            <a href="#">Baixada</a>
-            <a href="#">Agenda</a>
+            <a href="#baixada">Baixada</a>
+            <a href="#onde">Agenda</a>
         </nav>
 
         <div class="header-actions">
-            <a href="#" class="canal">Canal da Baixada</a>
-            <a href="#" class="button">Faça parte</a>
+            <a href="#canal" class="canal">Canal da Baixada</a>
+            <a href="#movimento" class="button">Faça parte</a>
         </div>
     </div>
 </header>
@@ -223,7 +223,299 @@
             </div>
         </div>
     </section>
+
+    <section id="agenda">
+        <div class="container">
+            <div class="f--column">
+                <p class="small" data-anim>Projetos especiais</p>
+                <h2 data-anim>30 dias. 30 projetos.</h2>
+                <p data-anim>Um projeto por dia. Clique no card para virar e ver o que vem pela frente.</p>
+
+                <div>
+                    <?php foreach ($trinta_projetos as $projeto): ?>
+                    <article>
+                        <div>
+                            <p><?= str_pad((string) $projeto['dia'], 2, '0', STR_PAD_LEFT) ?></p>
+                            <div>
+                                <p><?= htmlspecialchars($projeto['tema']) ?></p>
+                                <h3><?= htmlspecialchars($projeto['title']) ?></h3>
+                                <p><?= htmlspecialchars($projeto['desc']) ?></p>
+                                <a href="<?= htmlspecialchars($projeto['href']) ?>">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="blocos">
+            <div class="blocos-track">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+
+    <section id="onde">
+        <div class="container">
+            <div class="f--column">
+                <p class="small" data-anim>Agenda</p>
+                <h2 data-anim>Onde o <span class="color--secundary">Lucas está.</span></h2>
+
+                <div>
+                    <?php foreach ($eventos as $evento): ?>
+                    <article data-anim>
+                        <img src="assets/images/where-img.png" alt="Lucas Mourão">
+                        <p><?= htmlspecialchars($evento['data']) ?></p>
+                        <h3><?= htmlspecialchars($evento['local']) ?></h3>
+                        <p><?= htmlspecialchars($evento['title']) ?></p>
+                        <p>às <?= htmlspecialchars($evento['hora']) ?></p>
+                        <a href="<?= htmlspecialchars($evento['href']) ?>">Ver detalhes</a>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+
+                <a href="#" class="button">Ver agenda completa</a>
+            </div>
+        </div>
+
+        <div class="blocos">
+            <div class="blocos-track">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+
+    <section id="fatos">
+        <div class="container">
+            <div class="f--column">
+                <p class="small" data-anim>Sem promessa vazia</p>
+                <h2 data-anim>A verdade <span class="color--secundary">basta.</span></h2>
+                <p data-anim>Fato, trabalho e resultado precisam falar mais alto.</p>
+
+                <div>
+                    <?php foreach ($fatos as $fato): ?>
+                    <article data-anim>
+                        <span data-icon="<?= htmlspecialchars($fato['icon']) ?>"></span>
+                        <h3><?= htmlspecialchars($fato['title']) ?></h3>
+                        <p><?= htmlspecialchars($fato['desc']) ?></p>
+                        <a href="<?= htmlspecialchars($fato['href']) ?>"><?= htmlspecialchars($fato['cta']) ?></a>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="blocos">
+            <div class="blocos-track">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+
+    <section id="baixada">
+        <div class="container">
+            <div class="f--column">
+                <p class="small" data-anim>Onde tudo começou</p>
+                <h2 data-anim>Praia Grande não é apenas parte da história de Lucas.<br><span class="color--secundary">É onde ele aprendeu a fazer.</span></h2>
+                <p data-anim>Uma cidade que cresceu, se transformou e mostrou que planejamento muda a realidade.</p>
+            </div>
+        </div>
+
+        <img src="assets/images/bike.png" alt="" aria-hidden="true" data-anim="from-left">
+        <img src="assets/images/ancor.png" alt="" aria-hidden="true" data-anim="from-right">
+
+        <div data-anim>
+            <?php foreach ($start as $item): ?>
+            <figure>
+                <img src="<?= htmlspecialchars($item['src']) ?>" alt="<?= htmlspecialchars($item['alt']) ?>">
+            </figure>
+            <?php endforeach; ?>
+        </div>
+    </section>
+
+    <section id="capitulo">
+        <div class="container">
+            <div class="f--column">
+                <p class="small" data-anim>O próximo capítulo</p>
+                <h2 data-anim>O que podemos fazer pela Baixada no Estado?</h2>
+
+                <div>
+                    <?php foreach ($capitulo as $item): ?>
+                    <article data-anim>
+                        <img src="<?= htmlspecialchars($item['icon']) ?>" alt="">
+                        <h3><?= htmlspecialchars($item['title']) ?></h3>
+                        <p>O desafio</p>
+                        <p><?= htmlspecialchars($item['desafio']) ?></p>
+                        <p>A proposta</p>
+                        <p><?= htmlspecialchars($item['proposta']) ?></p>
+                        <p>Como o Estado pode atuar</p>
+                        <p><?= htmlspecialchars($item['estado']) ?></p>
+                        <a href="<?= htmlspecialchars($item['href']) ?>">Saiba mais</a>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="blocos">
+            <div class="blocos-track">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+
+    <section id="canal">
+        <div class="container">
+            <article>
+                <div data-anim>
+                    <p class="small">Canal da Baixada</p>
+                    <h2>A Baixada precisa ser ouvida de perto.</h2>
+                    <p>Um canal direto para entender os desafios de cada cidade, bairro e comunidade.</p>
+                    <p>O que precisa melhorar na sua cidade?</p>
+                    <div>
+                        <a href="#">Conte para o Lucas</a>
+                        <a href="#">Acessar Canal da Baixada</a>
+                    </div>
+                    <p>Lucas Mourão • Nº 55500</p>
+                </div>
+                <img src="assets/images/canal.png" alt="Celular com o Canal da Baixada no WhatsApp e mensagens de moradores sobre a cidade.">
+            </article>
+        </div>
+
+        <div class="blocos">
+            <div class="blocos-track">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+
+    <section id="redes">
+        <div class="container">
+            <div class="f--column">
+                <p class="small" data-anim>Acompanhe de perto</p>
+                <h2 data-anim>O trabalho acontece todos os dias.</h2>
+                <p data-anim>Uma cidade que cresceu, se transformou e mostrou que planejamento muda a realidade.</p>
+
+                <div>
+                    <?php foreach ($redes as $rede): ?>
+                    <a href="<?= htmlspecialchars($rede['href']) ?>"><?= htmlspecialchars($rede['label']) ?></a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <?php foreach ($videos as $video): ?>
+            <figure>
+                <video playsinline preload="metadata"<?php if ($video['src']): ?> src="<?= htmlspecialchars($video['src']) ?>"<?php endif; ?><?php if ($video['poster']): ?> poster="<?= htmlspecialchars($video['poster']) ?>"<?php endif; ?>></video>
+                <button type="button" aria-label="Reproduzir vídeo"></button>
+            </figure>
+            <?php endforeach; ?>
+        </div>
+
+        <div class="blocos">
+            <div class="blocos-track">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+            </div>
+        </div>
+    </section>
+
+    <section id="movimento">
+        <div class="container">
+            <div data-anim>
+                <p class="small">Movimento</p>
+                <h2>O próximo capítulo é construído com gente.</h2>
+                <p>Acompanhe Lucas mais de perto e receba novidades sobre agenda, projetos e ações pela Baixada.</p>
+
+                <div>
+                    <img src="assets/images/form-img-1.png" alt="Lucas Mourão em campanha, acenando de um carro e cumprimentando apoiadores.">
+                    <img src="assets/images/form-img-2.png" alt="Moradores da Baixada acompanhando a campanha.">
+                    <img src="assets/images/form-icon-2.png" alt="" aria-hidden="true">
+                    <img src="assets/images/form-icon-1.png" alt="" aria-hidden="true">
+                </div>
+            </div>
+
+            <div data-anim="from-right">
+                <form id="contact-form">
+                    <input type="hidden" id="page_url" name="page_url">
+                    <input type="hidden" id="utm_source" name="utm_source">
+                    <input type="hidden" id="utm_medium" name="utm_medium">
+                    <input type="hidden" id="utm_campaign" name="utm_campaign">
+                    <input type="hidden" id="utm_term" name="utm_term">
+                    <input type="hidden" id="utm_content" name="utm_content">
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                    <label for="telefone">WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Seu bairro" required>
+
+                    <label>
+                        <input type="checkbox" name="lgpd" value="1" required>
+                        Concordo em receber comunicações sobre agenda, projetos e ações do movimento.
+                    </label>
+
+                    <button type="submit" class="button">Quero fazer parte</button>
+                </form>
+
+                <div id="form-success">
+                    <h2>Cadastro realizado.</h2>
+                    <p>Quer acompanhar ainda mais de perto?</p>
+                    <a href="https://chat.whatsapp.com/Ie741WiwhRqLFu7kyYrD16?mode=gi_t">Entrar no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blocos">
+            <div class="blocos-track">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+                <img src="assets/images/blocos.png" alt="" aria-hidden="true">
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
+    <div class="container">
+        <div>
+            <p>Lucas Mourão</p>
+            <p>Deputado estadual</p>
+            <img src="assets/images/footer-1.png" alt="55500">
+            <img src="assets/images/footer-2.png" alt="PSD">
+        </div>
+
+        <nav>
+            <p>Navegação</p>
+            <a href="#lucas">Lucas</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#canal">Canal da Baixada</a>
+            <a href="#onde">Agenda</a>
+            <a href="#redes">Redes</a>
+            <a href="#movimento">Contato</a>
+        </nav>
+
+        <div>
+            <p>Participe</p>
+            <a href="https://chat.whatsapp.com/Ie741WiwhRqLFu7kyYrD16?mode=gi_t">Falar no WhatsApp</a>
+            <a href="#canal">Canal da Baixada</a>
+        </div>
+    </div>
+
+    <div>
+        <p>CNPJ eleitoral: a definir — Responsável: a definir — <a href="#">Política de Privacidade</a> — <a href="#">Termos de Uso</a> — Informações sobre tratamento de dados conforme exigido pela legislação eleitoral.</p>
+        <a href="#">Voltar ao topo</a>
+    </div>
 </footer>

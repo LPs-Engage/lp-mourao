@@ -20,28 +20,29 @@
 })();
 
 (function () {
-  const frame = document.querySelector("#projetos figure");
-  const video = frame?.querySelector("video");
-  const playBtn = frame?.querySelector("button");
+  document.querySelectorAll("#projetos figure, #redes figure").forEach((frame) => {
+    const video = frame.querySelector("video");
+    const playBtn = frame.querySelector("button");
 
-  if (!frame || !video || !playBtn) return;
+    if (!video || !playBtn) return;
 
-  const hasSource = () => Boolean(video.currentSrc || video.src || video.querySelector("source"));
+    const hasSource = () => Boolean(video.currentSrc || video.src || video.querySelector("source"));
 
-  playBtn.addEventListener("click", () => {
-    if (!hasSource()) return;
-    video.setAttribute("controls", "");
-    video.play();
-    frame.classList.add("is-playing");
-  });
+    playBtn.addEventListener("click", () => {
+      if (!hasSource()) return;
+      video.setAttribute("controls", "");
+      video.play();
+      frame.classList.add("is-playing");
+    });
 
-  video.addEventListener("pause", () => {
-    frame.classList.remove("is-playing");
-  });
+    video.addEventListener("pause", () => {
+      frame.classList.remove("is-playing");
+    });
 
-  video.addEventListener("ended", () => {
-    frame.classList.remove("is-playing");
-    video.removeAttribute("controls");
+    video.addEventListener("ended", () => {
+      frame.classList.remove("is-playing");
+      video.removeAttribute("controls");
+    });
   });
 })();
 
@@ -77,6 +78,31 @@
       });
 
       applyFilter();
+    });
+  });
+})();
+
+(function () {
+  const section = document.getElementById("agenda");
+  if (!section) return;
+
+  section.querySelectorAll("article").forEach((card) => {
+    card.setAttribute("tabindex", "0");
+
+    const toggle = () => {
+      const open = card.classList.toggle("is-flipped");
+      card.setAttribute("aria-pressed", String(open));
+    };
+
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
+      toggle();
+    });
+
+    card.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      e.preventDefault();
+      toggle();
     });
   });
 })();

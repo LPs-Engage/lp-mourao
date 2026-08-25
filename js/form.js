@@ -1,6 +1,5 @@
 (function () {
-  const WEBHOOK_URL =
-    "https://n8n.engageagencia.com.br/webhook-test/eff85629-040e-41e8-bd47-2cfa0cf4666b";
+  const WEBHOOK_URL = "";
   const REDIRECT_URL =
     "https://chat.whatsapp.com/Ie741WiwhRqLFu7kyYrD16?mode=gi_t";
 
@@ -52,7 +51,7 @@
   const initFormSubmit = (form, phoneInput, onSuccess) => {
     if (!form || !phoneInput) return;
 
-    form.action = WEBHOOK_URL;
+    form.action = WEBHOOK_URL || "#";
     form.method = "POST";
 
     form.addEventListener("submit", async (e) => {
@@ -70,28 +69,37 @@
       const submitBtn = form.querySelector('[type="submit"]');
       if (submitBtn) submitBtn.disabled = true;
 
-      try {
-        const response = await fetch(form.action, {
-          method: form.method,
-          body: formData,
-          headers: { Accept: "application/json" },
-        });
+      if (WEBHOOK_URL) {
+        try {
+          const response = await fetch(WEBHOOK_URL, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" },
+          });
 
-        if (!response.ok) {
-          alert("Ocorreu um erro ao enviar. Tente novamente.");
+          if (!response.ok) {
+            alert("Ocorreu um erro ao enviar. Tente novamente.");
+            return;
+          }
+        } catch (err) {
+          console.warn("Erro ao enviar formulário:", err);
+          alert("Erro ao enviar o formulário.");
           return;
+        } finally {
+          if (submitBtn) submitBtn.disabled = false;
         }
-      } catch (err) {
-        console.warn("Erro ao enviar formulário:", err);
-        alert("Erro ao enviar o formulário.");
-        return;
-      } finally {
-        if (submitBtn) submitBtn.disabled = false;
+      } else if (submitBtn) {
+        submitBtn.disabled = false;
       }
 
       form.reset();
       phoneInput.value = "+55 ";
       onSuccess?.();
+
+      if (document.getElementById("movimento")?.classList.contains("is-sent")) {
+        return;
+      }
+
       window.location.href = REDIRECT_URL;
     });
   };
@@ -102,7 +110,9 @@
 
   if (contactForm && telefoneInput) {
     initPhoneMask(telefoneInput);
-    initFormSubmit(contactForm, telefoneInput);
+    initFormSubmit(contactForm, telefoneInput, () => {
+      document.getElementById("movimento")?.classList.add("is-sent");
+    });
   }
 
   // --- popup (opcional, só se existir no DOM) ---
