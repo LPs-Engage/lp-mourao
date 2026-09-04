@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /obrigado/
-Disallow: /includes/
-Disallow: /config.php
 
 Sitemap: 
