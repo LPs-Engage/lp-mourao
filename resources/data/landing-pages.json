@@ -1,0 +1,64 @@
+{
+    "landingPages": [
+        {
+            "slug": "exemplo",
+            "active": true,
+            "productName": "Landing de exemplo",
+            "template": "minimal-lead",
+            "theme": "default",
+            "seo": {
+                "title": "Landing de exemplo",
+                "description": "Modelo pronto para novas landing pages da campanha.",
+                "robots": "noindex,nofollow",
+                "ogType": "website",
+                "schema": "WebPage"
+            },
+            "thankYouSeo": {
+                "title": "Cadastro recebido",
+                "description": "Obrigado por fazer parte do movimento.",
+                "robots": "noindex,nofollow"
+            },
+            "heroTitle": "Uma landing pronta para a próxima campanha.",
+            "heroSubtitle": "Ative este modelo em resources/data/landing-pages.json para publicar uma LP com URL limpa.",
+            "ctaLabel": "Quero participar",
+            "ctaHref": "/exemplo/obrigado",
+            "sections": [],
+            "thankYou": {
+                "title": "Cadastro recebido",
+                "message": "Obrigado por fazer parte do movimento.",
+                "ctaLabel": "Voltar ao site",
+                "ctaHref": "/"
+            }
+        },
+        {
+            "slug": "lp-desativada",
+            "active": false,
+            "productName": "LP desativada",
+            "template": "hero-only",
+            "theme": "default",
+            "seo": {
+                "title": "LP desativada",
+                "description": "Esta landing não deve aparecer no sitemap.",
+                "robots": "noindex,nofollow",
+                "ogType": "website",
+                "schema": "WebPage"
+            },
+            "thankYouSeo": {
+                "title": "Obrigado",
+                "description": "Página inativa.",
+                "robots": "noindex,nofollow"
+            },
+            "heroTitle": "Inativa",
+            "heroSubtitle": "Não publicar.",
+            "ctaLabel": "Voltar",
+            "ctaHref": "/",
+            "sections": [],
+            "thankYou": {
+                "title": "Obrigado",
+                "message": "Página inativa.",
+                "ctaLabel": "Voltar ao site",
+                "ctaHref": "/"
+            }
+        }
+    ]
+}

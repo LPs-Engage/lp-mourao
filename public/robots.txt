@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /login
+Disallow: /register
+Disallow: /settings
+Disallow: /obrigado
+Disallow: /*/obrigado
+
+Sitemap: /sitemap.xml

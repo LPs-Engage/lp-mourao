@@ -1,0 +1,636 @@
+{
+    "pages": {
+        "home": {
+            "path": "/",
+            "title": "Lucas Mourão | 55500",
+            "description": "Raízes que moldam um novo tempo. Aprendeu com o exemplo. Mostrou no trabalho. Lucas Mourão, 55500.",
+            "robots": "index,follow",
+            "ogImage": "/images/hero-backgroundV2.png",
+            "ogType": "website",
+            "schema": "WebPage"
+        },
+        "obrigado": {
+            "path": "/obrigado",
+            "title": "Cadastro realizado",
+            "description": "Cadastro realizado. Acompanhe Lucas de perto no WhatsApp.",
+            "robots": "noindex,nofollow",
+            "ogImage": "/images/hero-backgroundV2.png",
+            "ogType": "website"
+        }
+    },
+    "campaign": {
+        "whatsappGroupUrl": "https://chat.whatsapp.com/Ie741WiwhRqLFu7kyYrD16?mode=gi_t",
+        "hero": {
+            "title": "Aprendeu com o exemplo. Mostrou no trabalho. Lucas Mourão, 55500.",
+            "image": "/images/hero-backgroundV2.png",
+            "imageMobile": "/images/hero-background-mobV2.png",
+            "imageAlt": "Lucas Mourão com a família. Raízes que atravessam o tempo. Aprendeu com o exemplo. Mostrou no trabalho.",
+            "marqueeAlt": "Ícones da Baixada: âncora, banco, barco, bicicleta e praia."
+        },
+        "lucas": {
+            "eyebrow": "Lucas em 10 segundos",
+            "title": "Uma trajetória construída",
+            "titleAccent": "em Praia Grande.",
+            "items": [
+                {
+                    "icon": "/images/trajetoria-icon-1.png",
+                    "iconAlt": "",
+                    "title": "Praia Grande",
+                    "body": "Cresceu e estudou na cidade."
+                },
+                {
+                    "icon": "/images/trajetoria-icon-2.png",
+                    "iconAlt": "",
+                    "title": "Administração",
+                    "body": "Universidade Presbiteriana Mackenzie."
+                },
+                {
+                    "icon": "/images/trajetoria-icon-3.png",
+                    "iconAlt": "",
+                    "title": "Inovação",
+                    "body": "Experiências acadêmicas e profissionais ligadas a negócios e transformação urbana."
+                },
+                {
+                    "icon": "/images/trajetoria-icon-4.png",
+                    "iconAlt": "",
+                    "title": "Gestão pública",
+                    "body": "Ex-secretário de Projetos Especiais e Estratégicos."
+                },
+                {
+                    "icon": "/images/trajetoria-icon-5.png",
+                    "iconAlt": "Bom Dia! 55500",
+                    "title": "55500",
+                    "body": "Candidato a deputado estadual por São Paulo. A formação pela Mackenzie e sua passagem pela Secretaria são documentadas pela Prefeitura de Praia Grande; sua candidatura atual consta como deputado estadual nº 55500."
+                }
+            ]
+        },
+        "trabalho": {
+            "eyebrow": "Uma história com Praia Grande",
+            "title": "Antes da vida pública, já existia uma história com a cidade.",
+            "items": [
+                {
+                    "title": "Infância",
+                    "body": "Cresceu em Praia Grande",
+                    "images": [
+                        {
+                            "src": "/images/vida-1.png",
+                            "alt": "Lucas criança em Praia Grande"
+                        },
+                        {
+                            "src": "/images/vida-2.png",
+                            "alt": "Lucas na infância"
+                        }
+                    ]
+                },
+                {
+                    "title": "Formação",
+                    "body": "Administração de empresas",
+                    "images": [
+                        {
+                            "src": "/images/vida-3.png",
+                            "alt": "Lucas na formação acadêmica"
+                        },
+                        {
+                            "src": "/images/vida-4.png",
+                            "alt": "Lucas em evento de formação"
+                        }
+                    ]
+                },
+                {
+                    "title": "Experiência",
+                    "body": "Negócios, inovação e transformação urbana",
+                    "images": [
+                        {
+                            "src": "/images/vida-5.png",
+                            "alt": "Lucas em encontro profissional"
+                        }
+                    ]
+                },
+                {
+                    "title": "Gestão",
+                    "body": "Projetos especiais e estratégicos",
+                    "images": [
+                        {
+                            "src": "/images/vida-6.png",
+                            "alt": "Lucas em ação de gestão"
+                        },
+                        {
+                            "src": "/images/vida-7.png",
+                            "alt": "Lucas com a comunidade"
+                        }
+                    ]
+                },
+                {
+                    "title": "2026\num novo capítulo",
+                    "body": "",
+                    "images": [
+                        {
+                            "src": "/images/vida-8.png",
+                            "alt": "Lucas em campanha"
+                        },
+                        {
+                            "src": "/images/vida-9.png",
+                            "alt": "Lucas com apoiadores"
+                        }
+                    ]
+                }
+            ]
+        },
+        "projetos": {
+            "eyebrow": "Gestão pública",
+            "title": "Antes de falar do futuro, veja o trabalho que já começou.",
+            "body": [
+                "Lucas esteve à frente da Secretaria de Projetos Especiais e Estratégicos de Praia Grande.",
+                "Uma Secretaria criada para pensar projetos estratégicos, inovação e novas oportunidades para o desenvolvimento da cidade."
+            ],
+            "videoSrc": "",
+            "videoPoster": ""
+        },
+        "agenda": {
+            "eyebrow": "Projetos especiais",
+            "title": "30 dias. 30 projetos.",
+            "body": "Um projeto por dia. Clique no card para virar e ver o que vem pela frente.",
+            "items": [
+                {
+                    "dia": 1,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 2,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 3,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 4,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 5,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 6,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 7,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 8,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 9,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 10,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 11,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 12,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 13,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 14,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 15,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 16,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 17,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 18,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 19,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 20,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 21,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 22,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 23,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 24,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 25,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 26,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 27,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 28,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 29,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                },
+                {
+                    "dia": 30,
+                    "tema": "economia",
+                    "title": "Nome do projeto",
+                    "desc": "Descrição curta do projeto.",
+                    "href": "#"
+                }
+            ]
+        },
+        "onde": {
+            "eyebrow": "Agenda",
+            "title": "Onde o",
+            "titleAccent": "Lucas está.",
+            "image": "/images/where-img.png",
+            "ctaLabel": "Ver agenda completa",
+            "ctaHref": "#",
+            "items": [
+                {
+                    "data": "19/08",
+                    "local": "Praia Grande",
+                    "title": "Nome do evento",
+                    "hora": "18h",
+                    "href": "#"
+                },
+                {
+                    "data": "XX/XX",
+                    "local": "Local",
+                    "title": "Nome do evento",
+                    "hora": "XXh",
+                    "href": "#"
+                },
+                {
+                    "data": "XX/XX",
+                    "local": "Local",
+                    "title": "Nome do evento",
+                    "hora": "XXh",
+                    "href": "#"
+                },
+                {
+                    "data": "XX/XX",
+                    "local": "Local",
+                    "title": "Nome do evento",
+                    "hora": "XXh",
+                    "href": "#"
+                }
+            ]
+        },
+        "fatos": {
+            "eyebrow": "Sem promessa vazia",
+            "title": "A verdade",
+            "titleAccent": "basta.",
+            "body": "Fato, trabalho e resultado precisam falar mais alto.",
+            "items": [
+                {
+                    "icon": "dots",
+                    "title": "Fato 01",
+                    "desc": "Lucas comandou a Secretaria de Projetos Especiais e Estratégicos.",
+                    "cta": "Ver detalhes",
+                    "href": "#"
+                },
+                {
+                    "icon": "doc",
+                    "title": "Fato 02",
+                    "desc": "Projeto X foi desenvolvido pela Secretaria.",
+                    "cta": "Ver documento",
+                    "href": "#"
+                },
+                {
+                    "icon": "lapis",
+                    "title": "Fato 03",
+                    "desc": "Projeto X foi entregue em XX/XX.",
+                    "cta": "Ver entrega",
+                    "href": "#"
+                }
+            ]
+        },
+        "baixada": {
+            "eyebrow": "Onde tudo começou",
+            "title": "Praia Grande não é apenas parte da história de Lucas.",
+            "titleAccent": "É onde ele aprendeu a fazer.",
+            "body": "Uma cidade que cresceu, se transformou e mostrou que planejamento muda a realidade.",
+            "gallery": [
+                {
+                    "src": "/images/start-img-1.png",
+                    "alt": "Lucas Mourão cumprimenta moradores na Vila São Jorge."
+                },
+                {
+                    "src": "/images/start-img-2.png",
+                    "alt": "Lucas Mourão em conversa sobre o real sentido da política."
+                },
+                {
+                    "src": "/images/start-img-3.png",
+                    "alt": "Lucas Mourão em campanha: três motivos para votar 55500."
+                },
+                {
+                    "src": "/images/start-img-4.png",
+                    "alt": "Lucas Mourão em Praia Grande: mais segurança na Baixada."
+                },
+                {
+                    "src": "/images/start-img-5.png",
+                    "alt": "Lucas Mourão com a comunidade da Vila São Jorge."
+                }
+            ]
+        },
+        "capitulo": {
+            "eyebrow": "O próximo capítulo",
+            "title": "O que podemos fazer pela Baixada no Estado?",
+            "items": [
+                {
+                    "icon": "/images/capitulo-icon-1.png",
+                    "title": "Mobilidade",
+                    "desafio": "Texto a definir.",
+                    "proposta": "Texto a definir.",
+                    "estado": "Texto a definir.",
+                    "href": "#",
+                    "copy": {
+                        "body": [
+                            "A Baixada Santista precisa de deslocamento digno entre cidades, bairros e o porto — não de soluções pensadas só para a capital."
+                        ],
+                        "desafio": "Trens, ônibus e acessos saturados alongam o dia de quem trabalha, estuda ou busca atendimento. A ligação entre Praia Grande, Santos, São Vicente, Guarujá e o entorno ainda é frágil para o tamanho da região.",
+                        "proposta": "Tratar a mobilidade da Baixada como política de Estado: integração entre modos, prioridade ao transporte coletivo e corredores que realmente conectam as cidades da região.",
+                        "estado": "O Estado pode articular investimentos, convênios e obras de impacto regional — trilhos, acessos e gestão compartilhada com as prefeituras — para a Baixada deixar de ser tratada como apêndice da capital."
+                    }
+                },
+                {
+                    "icon": "/images/capitulo-icon-2.png",
+                    "title": "Desenvolvimento",
+                    "desafio": "Texto a definir.",
+                    "proposta": "Texto a definir.",
+                    "estado": "Texto a definir.",
+                    "href": "#",
+                    "copy": {
+                        "body": [
+                            "A região gera riqueza, mas precisa reter oportunidade: emprego, renda e um ambiente em que empresas e trabalhadores prosperem no próprio litoral."
+                        ],
+                        "desafio": "A economia da Baixada ainda depende demais de ciclos sazonais e de cadeias que não distribuem o ganho de forma justa entre as cidades da região.",
+                        "proposta": "Puxar um desenvolvimento que valorize porto, serviços, indústria e o potencial de cada município, com geração de emprego perto de casa e apoio a quem empreende na Baixada.",
+                        "estado": "O Estado pode direcionar crédito, atração de investimento, qualificação profissional e políticas de arranjos produtivos regionais, em articulação com prefeituras e o setor produtivo."
+                    }
+                },
+                {
+                    "icon": "/images/capitulo-icon-3.png",
+                    "title": "Saúde",
+                    "desafio": "Texto a definir.",
+                    "proposta": "Texto a definir.",
+                    "estado": "Texto a definir.",
+                    "href": "#",
+                    "copy": {
+                        "body": [
+                            "Ninguém deveria atravessar a região — ou subir a serra — para conseguir atendimento que poderia estar mais perto."
+                        ],
+                        "desafio": "Filas, vazios assistenciais e a dificuldade de especialidades fazem a saúde da Baixada depender demais de deslocamento e de estruturas concentradas.",
+                        "proposta": "Fortalecer a rede regional: atenção básica, especialidades e regulação que enxerguem a Baixada como um território único de cuidado, não como soma de filas isoladas.",
+                        "estado": "O Estado pode expandir vagas, convênios, mutirões e a oferta de especialidades, além de articular hospitais e ambulatórios regionais com as redes municipais."
+                    }
+                },
+                {
+                    "icon": "/images/capitulo-icon-4.png",
+                    "title": "Turismo",
+                    "desafio": "Texto a definir.",
+                    "proposta": "Texto a definir.",
+                    "estado": "Texto a definir.",
+                    "href": "#",
+                    "copy": {
+                        "body": [
+                            "Turismo forte só se sustenta com cidade boa o ano inteiro — para quem visita e para quem mora."
+                        ],
+                        "desafio": "A vocação turística da Baixada ainda convive com sazonalidade, informalidade e infraestrutura que não acompanha o fluxo nem protege o morador.",
+                        "proposta": "Qualificar o destino Baixada: calendário o ano todo, hospitalidade, cultura e um turismo que gere emprego local sem sacrificar a vida de quem vive aqui.",
+                        "estado": "O Estado pode investir em promoção, capacitação, acesso e ordenamento, conectando litoral, cultura e economia criativa numa política regional de turismo."
+                    }
+                },
+                {
+                    "icon": "/images/capitulo-icon-5.png",
+                    "title": "Segurança",
+                    "desafio": "Texto a definir.",
+                    "proposta": "Texto a definir.",
+                    "estado": "Texto a definir.",
+                    "href": "#",
+                    "copy": {
+                        "body": [
+                            "Segurança pública na Baixada exige presença, inteligência e cuidado com quem vive o território todos os dias."
+                        ],
+                        "desafio": "A região enfrenta violência, tráfico e a sensação de abandono em vários bairros — um problema que atravessa municípios e não se resolve na fronteira de cada cidade.",
+                        "proposta": "Integração entre forças, prevenção e valorização de quem está na ponta, com olhar regional para as rotas e as comunidades mais expostas.",
+                        "estado": "O Estado pode reforçar efetivo, inteligência, iluminação e programas de prevenção, em coordenação com as prefeituras e com a comunidade local."
+                    }
+                },
+                {
+                    "icon": "/images/capitulo-icon-6.png",
+                    "title": "Juventude / Inovação",
+                    "desafio": "Texto a definir.",
+                    "proposta": "Texto a definir.",
+                    "estado": "Texto a definir.",
+                    "href": "#",
+                    "copy": {
+                        "body": [
+                            "A juventude da Baixada precisa de caminho: estudo, primeiro emprego, esporte, cultura e espaço para inovar sem ter que ir embora."
+                        ],
+                        "desafio": "Falta de oportunidade, evasão e pouca conexão entre escola, trabalho e tecnologia empurram talentos para fora da região.",
+                        "proposta": "Abrir portas para jovens da Baixada — formação, inovação, esporte e cultura — para que o próximo capítulo da região seja escrito por quem cresceu aqui.",
+                        "estado": "O Estado pode ampliar vagas técnicas, programas de estágio, hubs de inovação e políticas de juventude articuladas com universidades, empresas e prefeituras."
+                    }
+                }
+            ]
+        },
+        "canal": {
+            "eyebrow": "Canal da Baixada",
+            "title": "A Baixada precisa ser ouvida de perto.",
+            "body": [
+                "Um canal direto para entender os desafios de cada cidade, bairro e comunidade."
+            ],
+            "highlight": "O que precisa\nmelhorar na sua cidade?",
+            "primaryCtaLabel": "Conte para o Lucas",
+            "primaryCtaHref": "#",
+            "secondaryCtaLabel": "Acessar Canal da Baixada",
+            "secondaryCtaHref": "#",
+            "caption": "Lucas Mourão • Nº 55500",
+            "image": "/images/canal.png",
+            "imageAlt": "Celular com o Canal da Baixada no WhatsApp e mensagens de moradores sobre a cidade."
+        },
+        "redes": {
+            "eyebrow": "Acompanhe de perto",
+            "title": "O trabalho acontece todos os dias.",
+            "body": "Uma cidade que cresceu, se transformou e mostrou que planejamento muda a realidade.",
+            "links": [
+                {
+                    "label": "Instagram",
+                    "href": "#"
+                },
+                {
+                    "label": "TikTok",
+                    "href": "#"
+                },
+                {
+                    "label": "Facebook",
+                    "href": "#"
+                },
+                {
+                    "label": "LinkedIn",
+                    "href": "#"
+                }
+            ],
+            "videos": [
+                {
+                    "src": "",
+                    "poster": ""
+                },
+                {
+                    "src": "",
+                    "poster": ""
+                },
+                {
+                    "src": "",
+                    "poster": ""
+                },
+                {
+                    "src": "",
+                    "poster": ""
+                },
+                {
+                    "src": "",
+                    "poster": ""
+                }
+            ]
+        },
+        "movimento": {
+            "eyebrow": "Movimento",
+            "title": "O próximo capítulo é construído com gente.",
+            "body": "Acompanhe Lucas mais de perto e receba novidades sobre agenda, projetos e ações pela Baixada."
+        },
+        "footer": {
+            "name": "Lucas Mourão",
+            "role": "Deputado estadual",
+            "legal": "CNPJ eleitoral: a definir — Responsável: a definir — Informações sobre tratamento de dados conforme exigido pela legislação eleitoral.",
+            "privacyHref": "#",
+            "termsHref": "#"
+        }
+    }
+}
